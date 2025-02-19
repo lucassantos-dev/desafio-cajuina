@@ -12,7 +12,8 @@ const nextConfig: NextConfig = {
         hostname: "localhost"
       }
 
-    ]
+    ],
+    unoptimized: true,
   },
   output: "standalone",
 
