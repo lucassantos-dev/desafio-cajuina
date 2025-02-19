@@ -1,11 +1,11 @@
-# Projeto Frontend e Backend
+# Teste Técnico - Projeto Lista de tarefas -  Frontend e Backend
 
 Este repositório contém um projeto fullstack com um frontend desenvolvido em Next.js e um backend em NestJS, utilizando SQLite3 como banco de dados. O projeto pode ser executado tanto com Docker quanto localmente.
 
 ## Tecnologias Utilizadas
 
 ### Frontend
-- [Next.js](https://nextjs.org/) - Framework para React com suporte a SSR e SSG.
+- [Next.js](https://nextjs.org/) - Framework para React.
 - [TypeScript](https://www.typescriptlang.org/) - Superset do JavaScript para tipagem estática.
 - [TailwindCSS](https://tailwindcss.com/) - Framework de CSS utilitário para estilização.
 - [ShadCN](https://ui.shadcn.com/) - Biblioteca de componentes para UI.
