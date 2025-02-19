@@ -1,0 +1,33 @@
+services:
+  backend:
+    build:
+      context: ./backend
+    container_name: nest-backend
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./backend:/usr/src/app
+      - ./data:/usr/src/app/data # Volume para persistir dados do SQLite
+    environment:
+      - NODE_ENV=development
+    networks:
+      - backend_network
+
+  frontend:
+    build:
+      context: ./frontend
+    container_name: next-frontend
+    ports:
+      - "3001:3001"
+    volumes:
+      - ./frontend:/usr/src/app
+    environment:
+      - NEXT_PUBLIC_API_URL=http://localhost:3000/
+    depends_on:
+      - backend
+    networks:
+      - backend_network
+
+networks:
+  backend_network:
+    driver: bridge
